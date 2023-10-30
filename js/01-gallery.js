@@ -46,4 +46,3 @@ gallery.addEventListener(`keydown`, (event) => {
     instance.close();
   }
 });
-a;

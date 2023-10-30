@@ -23,7 +23,12 @@ for (const item of galleryItems) {
   listItem.append(galleryItem);
   galleryItem.append(galleryImage);
 }
-let lightbox = new SimpleLightbox(`.gallery__item`, {});
+let lightbox = new SimpleLightbox(`.gallery__item`, {
+  captions: true,
+  captionsData: `alt`,
+  captionPosition: `bottom`,
+  captionDelay: 250,
+});
 
 gallery.addEventListener(`click`, (e) => {
   e.preventDefault();
